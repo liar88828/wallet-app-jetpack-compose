@@ -28,6 +28,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.tutor.wallet_app.ui.theme.fontPoppins
+import com.tutor.wallet_app.utils.Constants
 
 @Composable
 fun CardAvatar(modifier: Modifier = Modifier) {
@@ -97,6 +98,7 @@ fun CardContent(modifier: Modifier = Modifier) {
 			verticalArrangement = Arrangement.spacedBy(8.dp)
 
 		) {
+
 			Text(
 				"My Balance",
 				fontFamily = fontPoppins,
@@ -110,7 +112,7 @@ fun CardContent(modifier: Modifier = Modifier) {
 
 				)
 			Text(
-				text = "5169-4756-2985-4852",
+				text = Constants.SECRET_KEY,
 				fontFamily = fontPoppins,
 				fontWeight = FontWeight.Bold,
 				style = MaterialTheme.typography.titleLarge,
